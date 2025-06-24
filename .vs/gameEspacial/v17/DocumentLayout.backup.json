@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\bruno\\Documents\\gameEspacial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Temp\\Preprocessed-Standard.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\Preprocessed-Standard.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|c:\\users\\bruno\\documents\\gameespacial\\assets\\scripts\\venus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\venus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Preprocessed-Standard.shader",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Temp\\Preprocessed-Standard.shader",
+              "RelativeDocumentMoniker": "Temp\\Preprocessed-Standard.shader",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Temp\\Preprocessed-Standard.shader",
+              "RelativeToolTip": "Temp\\Preprocessed-Standard.shader",
+              "ViewState": "AgIAANvSBAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-06-24T00:48:35.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "venus.cs",
               "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\venus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\venus.cs",
               "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\venus.cs",
               "RelativeToolTip": "Assets\\Scripts\\venus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T00:22:46.941Z",
               "EditorCaption": ""
