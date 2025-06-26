@@ -6,95 +6,74 @@ using UnityEngine.InputSystem;
 public class SpaceshipController : MonoBehaviour
 {
     [Header("Movement")]
-    public float thrustForce = 100f;
-    public float strafeForce = 50f;
-    public float boostMultiplier = 2f;
-    public float maxSpeed = 200f;
-
+    public float acceleration = 5f;
+    public float deceleration = 3f;
+    public float mainDeceleration = 20f;
+    public float maxSpeed = 100f;
+    private float currentSpeed = 0f;
+    public float boost = 20f;
     [Header("Rotation")]
-    public float pitchTorque = 50f;
-    public float yawTorque = 50f;
-    public float rollTorque = 30f;
-    public float rotationDamping = 0.8f;
+    public float pitchSpeed = 0.5f;
+    public float yawSpeed = 0.5f;
+    public float rollSpeed = 0.5f;
+    public float rotationDamping = 0.5f;
 
-    // Input System
+    // Referências às ações que EXISTEM no seu asset
     private InputAction moveAction;
-    private InputAction rotateAction;
-    private InputAction rollAction;
     private InputAction boostAction;
+    private InputAction brakeAction;
+    private InputAction mainBreakAction;
+    private InputAction rollAction;
+    private InputAction acelerationAction;
 
     private Rigidbody rb;
-    private PlayerInput playerInput;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        playerInput = GetComponent<PlayerInput>();
+        var playerInput = GetComponent<PlayerInput>();
 
-        SetupInputActions();
-        SetupRigidbody();
-    }
-
-    void SetupInputActions()
-    {
-        // Acessa as a��es diretamente
+        // Acessa apenas as ações que você definiu
         moveAction = playerInput.actions["Move"];
-        rotateAction = playerInput.actions["Rotate"];
-        rollAction = playerInput.actions["Roll"];
         boostAction = playerInput.actions["Boost"];
+        brakeAction = playerInput.actions["Break"]; // Note o nome EXATO
+        mainBreakAction = playerInput.actions["MainBreak"];
+        rollAction = playerInput.actions["Roll"];
+        acelerationAction = playerInput.actions["Aceleration"];
     }
 
-    void SetupRigidbody()
+    void Update()
     {
-        rb.useGravity = false;
-        rb.linearDamping = 0;
-        rb.angularDamping = 0.5f;
+        // Controle de velocidade
+        if (boostAction.ReadValue<float>() > 0.5f)
+            currentSpeed += boost * Time.deltaTime;
+        
+        if (brakeAction.ReadValue<float>() > 0.5f)
+            currentSpeed -= deceleration * Time.deltaTime;
+        if (acelerationAction.ReadValue<float>() > 0.5f)
+            currentSpeed += acceleration * Time.deltaTime;
+        if (mainBreakAction.ReadValue<float>() > 0.5f)
+            currentSpeed -= mainDeceleration * Time.deltaTime;
+        currentSpeed = Mathf.Clamp(currentSpeed, 0, maxSpeed);
     }
 
     void FixedUpdate()
     {
-        HandleMovement();
-        HandleRotation();
-        LimitVelocity();
-    }
+        // Movimento
+        rb.linearVelocity = transform.forward * currentSpeed;
 
-    void HandleMovement()
-    {
+        // Rotação (usando Move para pitch/yaw e Roll para... roll)
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
-        bool boost = boostAction.ReadValue<float>() > 0.5f;
-
-        float thrust = thrustForce * (boost ? boostMultiplier : 1f);
-
-        // Forward/backward
-        rb.AddForce(transform.forward * moveInput.y * thrust);
-
-        // Left/right strafe
-        rb.AddForce(transform.right * moveInput.x * strafeForce);
-    }
-
-    void HandleRotation()
-    {
-        Vector2 rotateInput = rotateAction.ReadValue<Vector2>();
         float rollInput = rollAction.ReadValue<float>();
 
-        // Pitch (up/down)
-        rb.AddTorque(transform.right * rotateInput.y * pitchTorque);
+        rb.AddRelativeTorque(
+            -moveInput.y * pitchSpeed,  // W/S controla pitch (subir/descer)
+            moveInput.x * yawSpeed,    // A/D controla yaw (esquerda/direita)
+            rollInput * rollSpeed,     // Q/E controla roll
+            ForceMode.VelocityChange
+        );
 
-        // Yaw (left/right)
-        rb.AddTorque(transform.up * rotateInput.x * yawTorque);
-
-        // Roll (Q/E)
-        rb.AddTorque(transform.forward * rollInput * rollTorque);
-
-        // Damping
+        // Suavização
         rb.angularVelocity *= rotationDamping;
-    }
-
-    void LimitVelocity()
-    {
-        if (rb.linearVelocity.magnitude > maxSpeed)
-        {
-            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
-        }
     }
 }
