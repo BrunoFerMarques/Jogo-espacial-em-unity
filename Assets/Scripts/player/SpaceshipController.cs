@@ -1,74 +1,100 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Adicione esta linha
+using UnityEngine.InputSystem;
 
-public class SpaceshipWASDController : MonoBehaviour
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(PlayerInput))]
+public class SpaceshipController : MonoBehaviour
 {
-    [Header("Movimento")]
-    public float thrustSpeed = 50f;
-    public float strafeSpeed = 30f;
-    public float rollSpeed = 80f;
+    [Header("Movement")]
+    public float thrustForce = 100f;
+    public float strafeForce = 50f;
     public float boostMultiplier = 2f;
+    public float maxSpeed = 200f;
 
-    [Header("Rotação")]
-    public float pitchSpeed = 40f;
-    public float yawSpeed = 40f;
+    [Header("Rotation")]
+    public float pitchTorque = 50f;
+    public float yawTorque = 50f;
+    public float rollTorque = 30f;
+    public float rotationDamping = 0.8f;
+
+    // Input System
+    private InputAction moveAction;
+    private InputAction rotateAction;
+    private InputAction rollAction;
+    private InputAction boostAction;
 
     private Rigidbody rb;
-    private PlayerInput playerInput; // Referência ao Input System
+    private PlayerInput playerInput;
 
-    private Vector2 moveInput;
-    private Vector2 rotateInput;
-    private float rollInput;
-    private bool boostInput;
-
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.linearDamping = 0f;
-        rb.angularDamping = 0.2f;
-        playerInput = GetComponent<PlayerInput>(); // Inicializa o Input System
+        playerInput = GetComponent<PlayerInput>();
+
+        SetupInputActions();
+        SetupRigidbody();
     }
 
-    void OnMove(InputValue value) // Captura movimento (W/A/S/D)
+    void SetupInputActions()
     {
-        moveInput = value.Get<Vector2>();
+        // Acessa as a��es diretamente
+        moveAction = playerInput.actions["Move"];
+        rotateAction = playerInput.actions["Rotate"];
+        rollAction = playerInput.actions["Roll"];
+        boostAction = playerInput.actions["Boost"];
     }
 
-    void OnRotate(InputValue value) // Captura rotação (Setas)
+    void SetupRigidbody()
     {
-        rotateInput = value.Get<Vector2>();
-    }
-
-    void OnRoll(InputValue value) // Captura rolagem (Q/E)
-    {
-        rollInput = value.Get<float>();
-    }
-
-    void OnBoost(InputValue value) // Captura turbo (Shift)
-    {
-        boostInput = value.isPressed;
+        rb.useGravity = false;
+        rb.linearDamping = 0;
+        rb.angularDamping = 0.5f;
     }
 
     void FixedUpdate()
     {
-        // Movimento
-        float forwardThrust = moveInput.y * thrustSpeed;
-        float strafeThrust = moveInput.x * strafeSpeed;
-        float rollThrust = rollInput * rollSpeed;
+        HandleMovement();
+        HandleRotation();
+        LimitVelocity();
+    }
 
-        if (boostInput)
+    void HandleMovement()
+    {
+        Vector2 moveInput = moveAction.ReadValue<Vector2>();
+        bool boost = boostAction.ReadValue<float>() > 0.5f;
+
+        float thrust = thrustForce * (boost ? boostMultiplier : 1f);
+
+        // Forward/backward
+        rb.AddForce(transform.forward * moveInput.y * thrust);
+
+        // Left/right strafe
+        rb.AddForce(transform.right * moveInput.x * strafeForce);
+    }
+
+    void HandleRotation()
+    {
+        Vector2 rotateInput = rotateAction.ReadValue<Vector2>();
+        float rollInput = rollAction.ReadValue<float>();
+
+        // Pitch (up/down)
+        rb.AddTorque(transform.right * rotateInput.y * pitchTorque);
+
+        // Yaw (left/right)
+        rb.AddTorque(transform.up * rotateInput.x * yawTorque);
+
+        // Roll (Q/E)
+        rb.AddTorque(transform.forward * rollInput * rollTorque);
+
+        // Damping
+        rb.angularVelocity *= rotationDamping;
+    }
+
+    void LimitVelocity()
+    {
+        if (rb.linearVelocity.magnitude > maxSpeed)
         {
-            forwardThrust *= boostMultiplier;
-            strafeThrust *= boostMultiplier;
+            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
         }
-
-        rb.AddForce(transform.forward * forwardThrust);
-        rb.AddForce(transform.right * strafeThrust);
-        rb.AddTorque(transform.forward * -rollThrust);
-
-        // Rotação
-        float pitch = rotateInput.y * pitchSpeed;
-        float yaw = rotateInput.x * yawSpeed;
-        rb.AddRelativeTorque(pitch, yaw, 0f);
     }
 }
