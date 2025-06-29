@@ -3,7 +3,6 @@ using UnityEngine;
 public class AudioSequencePlayer : MonoBehaviour
 {
 
-    
     public AudioSource audioSource;
     public AudioClip[] audioClips; // Arraste aqui as 5 faixas no Inspector
 

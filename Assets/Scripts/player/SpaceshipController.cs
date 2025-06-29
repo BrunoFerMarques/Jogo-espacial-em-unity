@@ -10,7 +10,7 @@ public class SpaceshipController : MonoBehaviour
     public float deceleration = 3f;
     public float mainDeceleration = 20f;
     public float maxSpeed = 100f;
-    private float currentSpeed = 0f;
+    public float currentSpeed = 0f;
     public float boost = 20f;
     [Header("Rotation")]
     public float pitchSpeed = 0.5f;
