@@ -198,10 +198,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8881471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b75fc3eee448ed14daa9741981b78e14, type: 3}
+  m_Script: {fileID: 11500000, guid: 283789460d569544882868615af9cb3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceship: {fileID: 1486379307}
+  spaceship: {fileID: 1486379311}
   localOffset: {x: 1.5, y: -1, z: -6}
 --- !u!1001 &125808080
 PrefabInstance:
@@ -438,7 +438,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1781949194303238865, guid: 4e35892e4c5444340a0e2189311808e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1488792610}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1781949194303238870, guid: 4e35892e4c5444340a0e2189311808e5, type: 3}
       insertIndex: -1
@@ -463,10 +466,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 669756155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab39d1d0bc0fbf7428249e014d8d1bea, type: 3}
+  m_Script: {fileID: 11500000, guid: 54a266d4a4391094da0672bd46340e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceship: {fileID: 1486379307}
+  spaceship: {fileID: 1486379311}
   localOffset: {x: -1.5, y: -1, z: -6}
 --- !u!1 &765247960
 GameObject:
@@ -589,9 +592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5196fe28c4ebb704098bb7c0cfa89b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sunPosition: {x: 0, y: 0, z: 0}
-  orbitSpeed: 10
-  distanceTotal: 75.09
 --- !u!1 &863634042
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39efe4edda1fbd749903d4f839d73620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 10
 --- !u!1 &949809307
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +861,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 949809307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b71fbeb38ab3a4db3c07009d04fef7, type: 3}
+  m_Script: {fileID: 11500000, guid: 24692b2f4a4d9104e8c4625dcd84dcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   aircraft: {fileID: 1237148504}
@@ -991,8 +990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37795a5f76cbaba44976964a20346767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbitSpeed: 10
-  sunPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1080876717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,13 +1020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2252ba37919950b48baccb4c70d2fd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1080876719}
-  audioClips:
-  - {fileID: 8300000, guid: e4a879615ffc41949a6d9a7c0a12acf7, type: 3}
-  - {fileID: 8300000, guid: 98f7eb1516914a74d875d187a1f4098b, type: 3}
-  - {fileID: 8300000, guid: f9fc305ce1a587449815831373f0c82a, type: 3}
-  - {fileID: 8300000, guid: 164f33f60d4d185439fc4089e48dd5fb, type: 3}
-  - {fileID: 8300000, guid: de1c7e4fe64d70b49a37acdd4381d04b, type: 3}
 --- !u!82 &1080876719
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1353,10 +1343,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1480581084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38ef40df7cceaaa4a9c317c521c1d78a, type: 3}
+  m_Script: {fileID: 11500000, guid: 553e54fd7fd989e418e6429aadba7968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceship: {fileID: 1486379307}
+  spaceship: {fileID: 1486379311}
   localOffset: {x: 0, y: -1, z: -6}
 --- !u!1 &1486379300 stripped
 GameObject:
@@ -1399,19 +1389,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486379300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce740d585291004296d80fa39638afc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ab015dd0cda17c4ba4b522d2fd2abb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 5
-  deceleration: 3
-  mainDeceleration: 20
-  maxSpeed: 100
-  currentSpeed: 0
-  boost: 20
-  pitchSpeed: 0.5
-  yawSpeed: 0.5
-  rollSpeed: 0.5
-  rotationDamping: 0.5
+  scaleMultiplier: 0.3
+  iniPosition: {x: 0, y: 0, z: -300}
 --- !u!114 &1486379308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,7 +1406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 0e29708fd003f084886756289f01b806, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 665217f499e17ef4aa0787fdc097aa43, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -1451,11 +1433,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486379300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa08f29d77b22446a26fba2d078adb3, type: 3}
+  m_Script: {fileID: 11500000, guid: 135e6b8a069b49d45a3f9a55c351b0a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleMultiplier: 0.3
-  iniPosition: {x: 0, y: 0, z: -300}
+  acceleration: 5
+  deceleration: 3
+  mainDeceleration: 20
+  maxSpeed: 100
+  currentSpeed: 0
+  boost: 20
+  pitchSpeed: 0.5
+  yawSpeed: 0.5
+  rollSpeed: 0.5
+  rotationDamping: 0.5
 --- !u!114 &1486379315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,16 +1455,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486379300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ac438b6dacc4a4f88a5bcdc5e55665, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f7e966501b82cf498d6b2e2c88f6ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceshipController: {fileID: 1486379307}
-  audioSource: {fileID: 1488792611}
-  minVol: 0
-  maxVol: 1
-  minPitch: 0.8
-  maxPitch: 2
-  maxSpeed: 100
 --- !u!1 &1488792609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,12 +1483,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488792609}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 106.96347, y: -73.02719, z: 51.956913}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2081871779}
+  m_Father: {fileID: 669756154}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1488792611
 AudioSource:
@@ -1725,8 +1708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37795a5f76cbaba44976964a20346767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbitSpeed: 10
-  sunPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2081871778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1738,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1237148504}
-  - {fileID: 1488792610}
   - {fileID: 1480581085}
   - {fileID: 669756154}
   - {fileID: 8881470}

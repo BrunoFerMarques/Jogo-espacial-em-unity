@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\bruno\\Documents\\gameEspacial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|c:\\users\\bruno\\documents\\gameespacial\\assets\\scripts\\player\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\spaceshipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|C:\\Users\\bruno\\Documents\\gameEspacial\\assets\\scripts\\vfx\\positionfirecenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\vfx\\positionfirecenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -26,11 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpaceshipController.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\player\\SpaceshipController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\player\\SpaceshipController.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\player\\SpaceshipController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\player\\SpaceshipController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAlwCYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T20:55:36.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PositionFireCenter.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\vfx\\PositionFireCenter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\vfx\\PositionFireCenter.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\vfx\\PositionFireCenter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\vfx\\PositionFireCenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T20:54:11.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PositionFire.cs",
               "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\vfx\\PositionFire.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\vfx\\PositionFire.cs",
@@ -41,20 +74,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Sprite-Lit-Default.shader",
               "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
               "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-06-28T23:52:30.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T23:52:30.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Playlist.cs",
               "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\sounds\\Playlist.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\sounds\\Playlist.cs",
@@ -66,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SoundEngine.cs",
               "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\sounds\\SoundEngine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\sounds\\SoundEngine.cs",
