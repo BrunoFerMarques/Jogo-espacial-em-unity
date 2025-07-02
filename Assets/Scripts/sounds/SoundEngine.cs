@@ -1,5 +1,5 @@
 using UnityEngine;
-    
+
 public class SoundEngine : MonoBehaviour
 {
     public SpaceshipController spaceshipController;
@@ -16,10 +16,11 @@ public class SoundEngine : MonoBehaviour
         // Inicialmente, configura o volume e pitch mínimos
         audioSource.volume = minVol;
         audioSource.pitch = minPitch;
-
+    
         // Começa a tocar o som se não estiver tocando
         if (!audioSource.isPlaying)
         {
+            Debug.Log("Entorou");
             audioSource.loop = true; // Deixa o som em loop
             audioSource.Play();
         }
@@ -30,7 +31,6 @@ public class SoundEngine : MonoBehaviour
         
         if (!audioSource.isPlaying)
         {
-            audioSource.loop = true; 
             audioSource.Play();
         }
     

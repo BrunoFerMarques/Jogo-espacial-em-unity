@@ -32,7 +32,6 @@ public class SpaceshipController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         var playerInput = GetComponent<PlayerInput>();
-
         // Acessa apenas ações
         moveAction = playerInput.actions["Move"];
         boostAction = playerInput.actions["Boost"];
