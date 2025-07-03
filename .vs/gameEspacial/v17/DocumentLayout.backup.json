@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\bruno\\Documents\\gameEspacial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|c:\\users\\bruno\\documents\\gameespacial\\assets\\scripts\\selection\\selection_airship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\selection\\selection_airship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|c:\\users\\bruno\\documents\\gameespacial\\assets\\scripts\\player\\getspaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\getspaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Colors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Selection\\Colors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|C:\\Users\\bruno\\Documents\\gameEspacial\\assets\\scripts\\selection\\load_game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\selection\\load_game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Spaceships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Selection\\Spaceships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Selection\\selected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|C:\\Users\\bruno\\Documents\\gameEspacial\\assets\\scripts\\sounds\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF76097A-E443-1D53-E0A7-17AFD122CA3D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selection_airship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Selection\\selection_airship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +39,74 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "selection_airship.cs",
-              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selection_airship.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Selection\\selection_airship.cs",
-              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selection_airship.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Selection\\selection_airship.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCkAAABhAAAAAAAAAA==",
+              "Title": "getSpaceship.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\player\\getSpaceship.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\player\\getSpaceship.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\player\\getSpaceship.cs",
+              "RelativeToolTip": "Assets\\Scripts\\player\\getSpaceship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T14:55:23.974Z",
+              "WhenOpened": "2025-07-03T00:31:04.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Colors.cs",
-              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Colors.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Selection\\Colors.cs",
-              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Colors.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Selection\\Colors.cs",
+              "Title": "Load_game.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Load_game.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Selection\\Load_game.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Load_game.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Selection\\Load_game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T14:38:47.026Z"
+              "WhenOpened": "2025-07-03T00:14:53.662Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Spaceships.cs",
-              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Spaceships.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Selection\\Spaceships.cs",
-              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\Spaceships.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Selection\\Spaceships.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Title": "Sprite-Lit-Default.shader",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@a19b2562c494\\Shaders\\2D\\Sprite-Lit-Default.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-07-02T22:07:02.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\sounds\\Playlist.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\sounds\\Playlist.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\sounds\\Playlist.cs",
+              "RelativeToolTip": "Assets\\Scripts\\sounds\\Playlist.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwB4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T14:09:25.495Z"
+              "WhenOpened": "2025-07-02T21:57:01.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "selected.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selected.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Selection\\selected.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selected.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Selection\\selected.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T21:34:33.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "selection_airship.cs",
+              "DocumentMoniker": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selection_airship.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Selection\\selection_airship.cs",
+              "ToolTip": "C:\\Users\\bruno\\Documents\\gameEspacial\\Assets\\Scripts\\Selection\\selection_airship.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Selection\\selection_airship.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T21:33:57.082Z"
             }
           ]
         }

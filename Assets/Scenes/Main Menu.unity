@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 1278100590}
   - component: {fileID: 1278100591}
   m_Layer: 5
-  m_Name: Load_Game
+  m_Name: Load_Selection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,8 +745,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1278100591}
-        m_TargetAssemblyTypeName: Load_Game, Assembly-CSharp
-        m_MethodName: LoadSceneGame
+        m_TargetAssemblyTypeName: Load_Selectione, Assembly-CSharp
+        m_MethodName: LoadSceneSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
