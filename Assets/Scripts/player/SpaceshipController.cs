@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class SpaceshipController : MonoBehaviour
 {
+    
     [Header("Movement")]
     public float acceleration = 5f;
     public float deceleration = 3f;
